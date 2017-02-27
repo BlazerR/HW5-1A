@@ -1,4 +1,3 @@
-<?php include 'category_list.php'; ?>
 <?php
 require('../model/database.php');
 require('../model/product_db.php');
@@ -54,3 +53,5 @@ if ($action == 'list_products') {
     }
 }    
 ?>
+<?php include 'category_list.php'; ?>
+
