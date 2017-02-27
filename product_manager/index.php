@@ -53,3 +53,4 @@ if ($action == 'list_products') {
     }
 }    
 ?>
+<?php include 'category_list.php'; ?>
