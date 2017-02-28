@@ -9,9 +9,9 @@
         </tr>        
         
         -<!-- add category rows here -->
-        <?php foreach ($categories as $category): ?>
+        <?php foreach ($categories as $category_id): ?>
         <tr>
-        <td><?php echo $category ['categoryName']; ?></td>
+        <td><?php echo $category ['category_name']; ?></td>
         <td>DELETE</td>
         </tr>
         <?php end foreach; ?>
