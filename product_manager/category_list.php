@@ -16,8 +16,19 @@
     <p><a href="index.php?action=list_products">List Products</a></p>
 
 </main>
-<?php include '../view/footer.php'; ?>
+/* show tables */ $result = mysql_query('SHOW TABLES',$connection) or die('cannot show tables'); while($tableName = mysql_fetch_row($result)) { $table = $tableName[0]; echo '
+',$table,'
+'; $result2 = mysql_query('SHOW COLUMNS FROM '.$table) or die('cannot show columns from '.$table); if(mysql_num_rows($result2)) { echo ''; echo ''; while($row2 = mysql_fetch_row($result2)) { echo ''; foreach($row2 as $key=>$value) { echo ''; } echo ''; } echo '
+Field
+Type
+Null
+Key
+Default
+Extra
+',$value,'
 
+'; } } 
+<?php include '../view/footer.php'; ?>
 
 
 
