@@ -12,6 +12,7 @@
 
     <h2>Add Category</h2>
     <!-- add code for form here -->
+      $categories = get_categories();
       include('product_add.php');
     <p><a href="index.php?action=list_products">List Products</a></p>
 
