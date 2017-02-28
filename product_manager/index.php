@@ -53,3 +53,4 @@ if ($action == 'list_products') {
     }
 }    
 ?>
+<? include 'php product_list.ph' ; ?>
