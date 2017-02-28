@@ -9,6 +9,4 @@
 
 <!-- the body section -->
 <body>
-<div id="page">
-  <div id="header">
 <header><h1>My Guitar Shop</h1></header>
