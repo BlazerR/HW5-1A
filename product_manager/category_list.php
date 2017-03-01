@@ -18,15 +18,21 @@
 
 </main>
 <?php include '../view/footer.php'; ?>
+<?php 
+-- create the tables
+CREATE TABLE categories (
+  categoryID       INT(11)        NOT NULL   AUTO_INCREMENT,
+  categoryName     VARCHAR(255)   NOT NULL,
+  PRIMARY KEY (categoryID)
+);
 
-create table employee
-(first varchar(15),
- last varchar(20),
- age number(3),
- address varchar(30),
- city varchar(20),
- state varchar(20));
+insert data into the database
+INSERT INTO categories VALUES
+(1, 'Guitars'),
+(2, 'Basses'),
+(3, 'Drums');
 
-
-
+<input type="hidden" name="name" value="">
+<input type="submit" name="submit" value="Delete">
+ 
 
