@@ -18,7 +18,7 @@
 
 </main>
 <?php include '../view/footer.php'; ?>
-<?php 
+<?php
 -- create the tables
 CREATE TABLE categories (
   categoryID       INT(11)        NOT NULL   AUTO_INCREMENT,
@@ -34,5 +34,5 @@ INSERT INTO categories VALUES
 
 <input type="hidden" name="name" value="">
 <input type="submit" name="submit" value="Delete">
- 
+?> 
 
